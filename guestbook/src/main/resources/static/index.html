@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- react -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <!--react-dom -->
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    	<!-- babel-loader -->
+	<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    	<!--axios -->
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    
+    <script type="text/babel" src="react/home.js"></script>
+    <script type="text/babel" src="react/footer.js"></script>
+    <title>react guestbook</title>
+</head>
+<body>
+    <h1>Hi..React Guestbook</h1>
+    <script type="text/babel">
+        ReactDOM.render(
+            <Home/>, document.querySelector(".home")
+        )
+        ReactDOM.render(
+            <Footer/>, document.querySelector(".footer")
+        )
+
+
+    </script>
+
+    <div class="home"></div>
+    <div class="register"></div>
+    <div class="list"></div>
+    <div class="footer"></div>
+
+</body>
+</html>
